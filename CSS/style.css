@@ -19,7 +19,7 @@ html {
   }
 
   header, footer{
-      background-color: burlywood;
+      background-color: rgb(189, 222, 135);
       text-align: center;
       border-top-right-radius: 15px;
       border-bottom-right-radius: 15px;
@@ -31,7 +31,6 @@ html {
   }
   img{
       float: right;
-      
       border: 1px solid #000;
   }
 

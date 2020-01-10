@@ -1,0 +1,57 @@
+html {
+    font-size: 15px;
+    font-family: 'Anton', sans-serif;
+    text-align: center
+  }
+
+  body{
+      font-size: 15px;
+      line-height: 1.5;
+  }
+
+  header, div, nav, footer{
+      margin: 1.25rem auto;
+      max-width: 760px;
+  }
+
+  nav {
+      margin: 1.25rem 1.25rem;
+  }
+
+  header, footer{
+      background-color: burlywood;
+      text-align: center;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+      border-bottom-left-radius: 15px;
+      border-top-left-radius: 15px;
+  }
+  nav{
+      padding-bottom: 1.0rem;
+  }
+  img{
+      float: right;
+      
+      border: 1px solid #000;
+  }
+
+  div{
+      padding-top: 1.0rem;
+      text-align: left;
+  }
+
+  hr{
+      color: rgba(146, 146, 146, 0.418);
+  }
+
+  img{
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+      border-bottom-left-radius: 15px;
+      border-top-left-radius: 15px;
+      line-height: 10px;
+      margin-top: 20px;
+      margin-right: 20px;
+      height: 170px;
+      width: 140px;
+  }

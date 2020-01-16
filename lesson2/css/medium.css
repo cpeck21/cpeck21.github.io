@@ -1,0 +1,17 @@
+@media only screen and (min-width: 560px){
+html {
+    max-width: 400px;
+    padding: auto;
+    margin: 1.25rem auto;
+}
+
+img {
+    padding-left: 33%;
+}
+
+nav {
+    border-radius: 15px;
+    margin-top: 1.5rem;
+}
+
+}

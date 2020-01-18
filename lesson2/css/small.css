@@ -1,16 +1,85 @@
-    img {
-    width: 100px;
+body {
+	font-size: 16px;
+	font-family: "gelasio", Ubuntu, serif;
+}
+/* phone or baseline views **************************/
 
-    padding-left: 30%;
-    
-    
+h1 {
+    text-align: center;
+    background-color:maroon;
+    margin: auto;
+    max-width: 800px;
 }
 
-nav {
-    background-color: bisque;
-    padding: 1.5rem;
+main {
+	max-width: 767px;
+	margin: 0 auto;
+}
+h2 {
+    color: #536878;
+    background-color: yellow;
+	margin-block-start: 0em;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+main {
+	display: grid;
+	grid-template-columns: 1fr;
+	font-size: 0.8rem;
+}
+
+main section {
+	margin: 0.5rem;
+	border: 1px solid #bbb;
+    background-color: #eee;
     border-radius: 15px;
-    margin-top: 1.5rem;
-    
-    
+    padding-bottom: 10px;
+    padding-top: -25px;
+}
+section:nth-child(2) {
+	display: none;
+	margin: 0.5rem;
+}
+.colimage {
+    box-shadow: 0 0 30px #333;
+}
+
+img {
+    max-width: 240px;
+}
+
+/* Tablet Views ******************************/
+@media only screen and (min-width: 37.5em) {
+	main {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	section:nth-child(2) {
+		display: block;
+	}
+
+	section:nth-child(3) {
+		grid-column: span 2;
+	}
+
+	main picture {
+		display: block;
+	}
+	main section picture img {
+		width: 100%;
+		height: auto;
+		border: 1px solid #bbb;
+	}
+}
+
+/* Desktop Views ****************************/
+@media only screen and (min-width: 60em) {
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	section:nth-child(3) {
+		grid-column: span 1;
+	}
 }

@@ -4,9 +4,9 @@ body {
 }
 /* phone or baseline views **************************/
 
-h1 {
+h1, footer {
     text-align: center;
-    background-color:maroon;
+    background-color:rgb(212, 212, 178);
     margin: auto;
     max-width: 800px;
 }
@@ -16,8 +16,8 @@ main {
 	margin: 0 auto;
 }
 h2 {
-    color: #536878;
-    background-color: yellow;
+    color: #111111;
+    background-color:rgb(184, 157, 109);
 	margin-block-start: 0em;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
@@ -38,7 +38,6 @@ main section {
     padding-top: -25px;
 }
 section:nth-child(2) {
-	display: none;
 	margin: 0.5rem;
 }
 .colimage {

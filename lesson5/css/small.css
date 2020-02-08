@@ -1,0 +1,248 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    margin: 0 auto;
+}
+
+
+/*----------- HEADER --------------*/
+.headerWrapper {
+    background-color: white;
+}
+
+header {
+    padding: .5rem 2%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    float: left;
+    margin-right: 10px;
+    width: 50px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: rgb(17, 0, 255);
+}
+
+header h2 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 1rem;
+    color: rgb(17, 0, 255);
+}
+
+
+
+
+
+/*----------- NAVIGATION --------------*/
+.navWrapper {
+    background-color: rgb(9, 2, 109);
+}
+
+
+nav {
+    background-color: rgb(9, 2, 109);
+}
+
+
+nav button {
+    margin-left: 15px;
+    font-size: 1.6rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+
+
+nav ul li a:hover {
+    background-color: #aaa;
+    color: #333;
+}
+
+nav ul li.active a {
+    background-color: #eee;
+    color: #000;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+
+/*----------- MAIN --------------*/
+main {
+    padding: 2rem 2%;
+    min-height: 10rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+main h2 {
+    color: rgb(17, 0, 255);
+    margin: 0;
+    
+}
+
+div.hero-ph{
+    padding: 0;
+}
+
+main div {
+
+    padding: 1rem;
+    margin: 1rem;
+}
+
+div img {
+    width: 80%;
+    border-radius: 10px;
+}
+
+.herodiv {
+    position: relative;
+    margin: 10px;
+    width: 80%;
+    height: 300px;
+}
+
+.hero-ph {
+    margin: 10px auto;
+    width: 100%;
+    height: 250px;
+    min-width: 400px;
+}
+
+
+
+.weathersummary {
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    background-color: rgba(241, 237, 0, 0.5);
+    width: 200px;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid yellow;
+    box-shadow: 0 0 30px #777;
+
+}
+
+.weathersummary p, .weathersummary h3 {
+    padding: 0px;
+    margin: 0px;
+    font-size: 1rem;
+
+}
+
+.fiveday {
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+div#message {
+    background-color: rgb(115, 192, 236);
+    border-radius: 10px;
+}
+div.showme{
+    display: block;
+}
+
+div.hideme {
+    display: none;
+}
+
+section.forecast {
+    display: none;
+}
+
+
+
+.articlesection img {
+    width: 250px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+.articlesection {
+    background-color: lightblue;
+    border-radius: 10px;
+}
+
+.contactus {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: lightblue;
+    margin-top: 10px;
+    border-radius: 10px;
+
+}
+
+.contactus p {
+    font-size: .7rem;
+    margin:0;
+    text-align: center;
+    float: ;
+}
+
+.contactus div img {
+    width: 100%;
+    max-width: 150px;
+}
+
+
+
+/*----------- FOOTER --------------*/
+.footerWrapper {
+    background-color: rgb(9, 2, 109);
+}
+
+footer {
+    background-color: rgb(9, 2, 109);
+    color: white;
+    padding: .5rem 2%;
+    text-align: center;
+}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+

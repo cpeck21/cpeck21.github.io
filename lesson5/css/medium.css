@@ -1,0 +1,55 @@
+/* 35em is also 560px (if basefont is 16px) */
+@media only screen and (min-width: 37rem) {
+
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+    header img {width: auto;}
+    header h1 {font-size: 2rem;}
+    header h2 {font-size: 1.5rem;}
+
+
+/*----------- NAVIGATION --------------*/
+    nav ul {margin-left: 2%;}
+    nav ul li {float: left;}
+
+    nav ul li a{padding: .5rem 1rem;}
+
+    nav ul.hide {
+        display: flex;
+    }
+
+    nav button {
+        display: none;
+    }
+
+
+/*----------- MAIN --------------*/
+
+section.forecast{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+section.forecast div {
+    text-align: center;
+    border: 1px solid #aaa;
+}
+section.forecast div h5, section.forecast div p{
+    background-color: #eee;
+    margin: 0;
+    padding: 1rem;
+
+}
+
+.articlesection img {
+    float: right;
+    margin-right: 10px;
+    width: 400px;
+}
+
+/*----------- FOOTER --------------*/
+    
+} /* end of media query */

@@ -216,12 +216,13 @@ section.forecast {
     font-size: .7rem;
     margin:0;
     text-align: center;
-    float: ;
+    margin-right: 200px;
 }
 
 .contactus div img {
     width: 100%;
     max-width: 150px;
+    margin-left: 200px;
 }
 
 

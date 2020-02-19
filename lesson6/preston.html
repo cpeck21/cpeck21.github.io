@@ -66,11 +66,11 @@
         <h2>Preston</h2>
         <div id="message">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</div>
         <div class="herodiv">
-            <figure class="hero-ph">
-             <img src="images/franklinoriginal400.jpg" alt="heroimage" sizes="50vw"
-                srcset="images/franklinoriginal400.jpg 400w, images/franklinoriginal800.jpg 800w, images/franklinoriginal1280.jpg 1280w"
-                >
-            </figure>
+            <picture class="hero-ph">
+             <source media="(max-width: 400px)" srcset="images/franklinoriginal400.jpg">
+             <source media="(max-width: 800px)" srcset="images/franklinoriginal800.jpg">
+             <img src="images/franklinoriginal1280.jpg" alt="Franklin original picture">
+            </picture>
             <section class="weathersummary">
                 <h3>Weather Summary</h3>
                 <p>Currently: Sunny</p>

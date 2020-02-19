@@ -6,7 +6,7 @@ header{
     text-align: center;
     margin: 40px;
     height: 100px;
-   background-image: linear-gradient(red, yellow);
+   background-image: linear-gradient(red 5%, yellow 10%);
 }
 
 .lefttoright{
@@ -14,7 +14,7 @@ header{
     height: 100px;
     margin-top: 40px;
     color: white;
-    background-image: linear-gradient(to right,red,yellow);
+    background-image: linear-gradient(90deg,red,yellow );
     
 }
 
@@ -23,7 +23,7 @@ header{
     height: 400px;
     margin-top: 40px;
     color: white;
-    background-image: radial-gradient(red,yellow);
+    background-image: radial-gradient(red,orange);
    
    
 }

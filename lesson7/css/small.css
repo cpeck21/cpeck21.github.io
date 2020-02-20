@@ -236,6 +236,10 @@ section.forecast {
     grid-template-columns: 1fr;
 }
 
+.grid div p {
+    text-align: center;
+}
+
 
 /*----------- FOOTER --------------*/
 .footerWrapper {

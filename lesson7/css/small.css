@@ -240,7 +240,27 @@ section.forecast {
     text-align: center;
 }
 
+.pictures picture img{
+    max-width: 300px;
+}
+.pictures {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
 
+.titletitle {
+    text-align:center;
+}
+
+.pictures picture img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+.pictures picture img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+  }
 /*----------- FOOTER --------------*/
 .footerWrapper {
     background-color: rgb(9, 2, 109);

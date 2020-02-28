@@ -5,9 +5,10 @@ html {
   table {
     border-collapse: collapse;
     border: 2px solid rgb(200,200,200);
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     font-size: .8rem;
     background-color: #e7ffed;
+    width: 320px;
   }
   
   td, th {
@@ -26,6 +27,8 @@ html {
 
   tbody th {
       background-color: #628ca6;
+      color: white;
+      font-weight: 1000;
   }
   
   td, tr {
@@ -42,4 +45,5 @@ html {
 
   .difcolor {
       background-color: #628ca6;
+      color: white;
   }

@@ -5,12 +5,12 @@ html {
   table {
     border-collapse: collapse;
     border: 2px solid rgb(200,200,200);
-    letter-spacing: 0px;
     font-size: .8rem;
     background-color: #e7ffed;
     width: 320px;
+    box-shadow: 8px 10px 15px #9a9a9a;
   }
-  
+
   td, th {
     border: 1px solid rgb(190,190,190);
     padding: 10px 20px;

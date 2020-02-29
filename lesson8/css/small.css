@@ -261,6 +261,15 @@ section.forecast {
     filter: blur(0em);
     transition: filter 0.5s;
   }
+
+  label {
+      padding-top:20px;
+  }
+
+  .radiobutton {
+      margin: 0px;
+      padding: 0px;
+  }
 /*----------- FOOTER --------------*/
 .footerWrapper {
     background-color: rgb(9, 2, 109);

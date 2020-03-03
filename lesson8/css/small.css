@@ -270,6 +270,10 @@ section.forecast {
       margin: 0px;
       padding: 0px;
   }
+
+  input {
+      border-radius: 10px;
+  }
 /*----------- FOOTER --------------*/
 .footerWrapper {
     background-color: rgb(9, 2, 109);

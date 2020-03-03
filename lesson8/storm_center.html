@@ -67,15 +67,15 @@
 
         <label for="name">Name (Min. 5 Characters):</label>
 
-        <input type="text" id="name" name="name" required minlength="4" maxlength="30" pattern="regexp">
+        <input type="text" id="name" name="name" minlength="4" maxlength="30" pattern="regexp">
 
         <label for="email">Email:</label>
 
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email">
 
         <label for="telephone">Phone: </label>
 
-        <input type="tel" id="telephone" name="telephone" required>
+        <input type="tel" id="telephone" name="telephone">
 
         <label for="zip">Zip Code: </label>
 
@@ -144,8 +144,8 @@
 
         <textarea id="comments" name="comments" rows="4" cols="4"></textarea>
         <br>
-        <form action="thanks.html">
-            <input type="submit" value="Submit">
+        <form class="input" action="thanks.html">
+            <input type="submit" value="Complete" name="complete">
         </form>
 
 

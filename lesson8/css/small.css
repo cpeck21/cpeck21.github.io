@@ -271,8 +271,9 @@ section.forecast {
       padding: 0px;
   }
 
-  input {
+  input, select {
       border-radius: 10px;
+      height: 44px;
   }
 /*----------- FOOTER --------------*/
 .footerWrapper {

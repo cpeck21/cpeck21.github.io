@@ -18,8 +18,21 @@ h1 {
     background-image: linear-gradient(white 70%, gray);
 }
 
+image {
+    max-width: 200px;
+}
 
 
+/* Medium Screen */
+@media only screen and (min-width: 640px) {
+
+div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+}
 
 
 /* Large screen */
@@ -29,4 +42,8 @@ h1 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+image {
+    max-width: 200px;
 }
+
+}   

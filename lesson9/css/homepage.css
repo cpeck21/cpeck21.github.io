@@ -1,0 +1,10 @@
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.cards section {
+    background-color: lightblue;
+    margin: 10px;
+    text-align: center;
+}

@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Weather Site">
+    <meta name="author" content="Christopher Peck">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- This start file was build by Paul Cheney  -->
+    <title>Wright Weather: Weather for travel</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <!-- HEADER HERE -->
+    <div class="headerWrapper">
+        <header class="clearfix">
+            <section class="pictures">
+                <img src="images/sunnyairplane.png" alt="logo">
+            </section>
+            <section class="headings">
+                <h1>Wright Weather</h1>
+                <h2>Weather for your destination</h2>
+            </section>
+        </header>
+    </div>
+
+    <!-- NAVIGATION HERE -->
+    <div class="navWrapper">
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="Preston.html">Preston</a></li>
+                <li><a href="soda_springs.html">Soda Springs</a></li>
+                <li><a href="fish_haven.html">Fish Haven</a></li>
+                <li><a href="storm_center.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+            <script src="js/script.js">
+            </script>
+        </nav>
+    </div>
+
+
+    <!-- CONTENT HERE -->
+
+    <main>
+        <h2>Preston</h2>
+        <div id="message">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</div>
+        <div class="herodiv">
+            <picture class="hero-ph">
+             <source media="(max-width: 400px)" srcset="images/franklinoriginal400.jpg">
+             <source media="(max-width: 800px)" srcset="images/franklinoriginal800.jpg">
+             <img src="images/franklinoriginal1280.jpg" alt="Franklin original picture">
+            </picture>
+            <section class="weathersummary">
+                <h3>Weather Summary</h3>
+                <p>Currently: Sunny</p>
+                <p>High: 76&deg;</p>
+                <p>Current Temperature is <span id="temp">10</span>&deg;</p>
+                <p>Wind Chill: <span id="chill"></span>&deg;F</p>
+                <p>Humidity: 4.9%</p>
+                <p>Wind Speed: <span id="speed">40</span>mph</p>
+            </section>
+        </div>
+        <div class="fiveday">
+            <b> 5 day forecast</b>
+        </div>
+        <section class="forecast">
+
+            <div>
+
+                <h5>Monday</h5>
+                <img src="images/sun.png" alt="sun">
+                <p>40&deg;</p>
+            </div>
+            <div>
+                <h5>Tuesday</h5>
+                <img src="images/sun.png" alt="sun">
+                <p>44&deg;</p>
+            </div>
+            <div>
+                <h5>Wednesday</h5>
+                <img src="images/rain.png" alt="rain">
+                <p>43&deg;</p>
+            </div>
+            <div>
+                <h5>Monday</h5>
+                <img src="images/rain.png" alt="rain">
+                <p>42&deg;</p>
+            </div>
+            <div>
+                <h5>Monday</h5>
+                <img src="images/sun.png" alt="sun">
+                <p>40&deg;</p>
+            </div>
+
+
+
+
+
+        </section>
+        <section class="articlesection">
+            <img src="images/arcticlepic.jpg" alt="Northern lights">
+            <div class="article">
+
+                <h5>Northern Lights</h5>
+                <h6>By Jason Lewis</h6>
+                <p>Polar lights (aurora polaris) are a natural phenomenon found in both the northern and southern
+                    hemispheres
+                    that can be truly awe inspiring. ... These particles are boosted in energy in Earth's upper
+                    atmosphere, and
+                    when they collide with oxygen and nitrogen atoms, they produce dazzling auroral light.</p>
+
+            </div>
+        </section>
+        <section class="contactus">
+
+            <div>
+                <img src="images/preston.jpg" alt="Preston Map">
+            </div>
+            <div>
+                <p><br>
+                    <br>
+                    
+                    <br><b>Wright Weather</b> <br>
+                    310 North Main <br>
+                    Rexburg, Idaho <br>
+                    &#9742; 208-123-4567 <br>
+                    &#128321; www@ww.com>
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER HERE -->
+    <div class="footerWrapper">
+        <footer>
+            &copy; 2020 &bull; Christopher Peck
+
+        </footer>
+
+    </div>
+    <script>
+        const today = new Date();
+        console.log(today);
+
+        const dayNumber = today.getDay();
+        console.log(dayNumber);
+
+        const element = document.getElementById("message");
+
+        if (dayNumber == 6) {
+            element.classList.add("showme");
+        } else {
+            element.classList.add("hideme");
+        }
+    </script>
+    <script src="js/script1.js"></script>
+    <script src="js/imagehandling.js"></script>
+</body>
+
+</html>

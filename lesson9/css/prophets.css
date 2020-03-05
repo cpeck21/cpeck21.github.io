@@ -16,6 +16,7 @@ section {
 h1 {
     text-align: center;
     background-image: linear-gradient(white 70%, gray);
+    border: gray;
 }
 
 image {

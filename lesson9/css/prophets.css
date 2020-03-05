@@ -1,0 +1,32 @@
+div{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+section {
+    background-color: tan;
+    margin: 1px auto;
+    text-align: center;
+    max-width: 300px;
+    min-width: 300px;
+    border: rgba(165, 42, 42, 0.5) solid;
+        
+}
+
+h1 {
+    text-align: center;
+    background-image: linear-gradient(white 70%, gray);
+}
+
+
+
+
+
+/* Large screen */
+@media only screen and (min-width: 1280px) {
+
+    div{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}

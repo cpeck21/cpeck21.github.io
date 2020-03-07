@@ -15,7 +15,7 @@ fetch(requestURL)
             let p = document.createElement('p');
             let p2 = document.createElement('p');
             let p3 = document.createElement('p');
-            let image = document.createElement('image');
+            let img = document.createElement('img');
             
             
 
@@ -25,14 +25,14 @@ fetch(requestURL)
             p3.textContent = "Population: " + towns[i].currentPopulation;
             p.textContent = "Average Rainfall: " + towns[i].averageRainfall + "\"";
 
-            image.setAttribute('src', "images/" + towns[i].photo);
-            image.setAttribute('alt', "Photo of " + towns[i].name);
+            img.setAttribute('src', "images/" + towns[i].photo);
+            img.setAttribute('alt', "Photo of " + towns[i].name);
             
             
 
 
             card.appendChild(h2);
-            card.appendChild(image);
+            card.appendChild(img);
             card.appendChild(h3);
             card.appendChild(p);
             card.appendChild(p2);

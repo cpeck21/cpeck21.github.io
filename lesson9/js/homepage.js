@@ -20,12 +20,13 @@ fetch(requestURL)
             
 
             h2.textContent = towns[i].name;
-            image.setAttribute('src', "images/" + towns[i].photo);
-            image.setAttribute('alt', "Photo of " + towns[i].name);
             h3.textContent = towns[i].motto;
             p2.textContent = "Year Founded: " + towns[i].yearFounded;
             p3.textContent = "Population: " + towns[i].currentPopulation;
             p.textContent = "Average Rainfall: " + towns[i].averageRainfall + "\"";
+
+            image.setAttribute('src', "images/" + towns[i].photo);
+            image.setAttribute('alt', "Photo of " + towns[i].name);
             
             
 

@@ -29,7 +29,7 @@
 }
 
 .lowerhomepage {
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr;
 }
 
@@ -48,6 +48,34 @@
     padding-top: 5px;
 }
 
+
+
+
+.lowerhomepage {
+    max-width: 600px;
+    margin: .5rem auto;
+	border:1px solid #bbb;
+    background-color: #eee;
+	display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+  display: flex;
+	flex-direction: row;
+}
+
+article:nth-child(odd) {
+	flex-direction: row-reverse;
+}
+
+article img {
+    max-width: 200px;
+}
+
+
+
+ 
 
 
 @media only screen and (min-width: 700px) {

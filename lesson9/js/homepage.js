@@ -32,11 +32,11 @@ fetch(requestURL)
 
 
             card.appendChild(h2);
-            card.appendChild(img);
             card.appendChild(h3);
             card.appendChild(p);
             card.appendChild(p2);
             card.appendChild(p3);
+            card.appendChild(img);
             
 
             document.querySelector('div.cards').appendChild(card);

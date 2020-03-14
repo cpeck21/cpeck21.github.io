@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Weather Site">
+    <meta name="author" content="Christopher Peck">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- This start file was build by Paul Cheney  -->
+    <title>Wright Weather: Weather for travel</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet">
+    <!-- enhance-json-->
+    <link href="css/homepage.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <!-- HEADER HERE -->
+    <div class="headerWrapper">
+        <header class="clearfix">
+            <div class="pictures">
+                <img src="images/sunnyairplane.png" alt="logo">
+            </div>
+            <section class="headings">
+                <h1>Wright Weather</h1>
+                <h2>Weather for your destination</h2>
+            </section>
+        </header>
+    </div>
+
+    <!-- NAVIGATION HERE -->
+    <div class="navWrapper">
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="Preston.html">Preston</a></li>
+                <li><a href="soda_springs.html">Soda Springs</a></li>
+                <li><a href="fish_haven.html">Fish Haven</a></li>
+                <li><a href="storm_center.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+            <script src="js/script.js">
+            </script>
+        </nav>
+    </div>
+
+
+    <!-- CONTENT HERE -->
+
+    <main>
+
+        <div class="cards"></div>
+
+
+        <div class="lowerhomepage">
+
+            <div class="homepagemap">
+                <img src="images/usa.jpg" alt="Live Radar Map">
+                <h2>Live Radar</h2>
+            </div>
+            <div class="homepagelinktoarticle">
+                    <img src="images/franklin.jpg" alt="article picture">
+                    <h2>Article Link</h2>
+                    <p> Some little proactive spill about this cool article that you should be reading</p>
+            </div>
+            </div>
+    </main>
+    <!-- FOOTER HERE -->
+    <div class="footerWrapper">
+        <footer>
+            &copy; 2020 &bull; Christopher Peck
+
+        </footer>
+
+    </div>
+    <script src="js/script1.js"></script>
+    <script src="js/imagehandling.js"></script>
+    <script src="js/homepage.js"></script>
+</body>
+
+</html>

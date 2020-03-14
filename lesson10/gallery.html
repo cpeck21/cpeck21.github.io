@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Weather Site">
+    <meta name="author" content="Christopher Peck">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- This start file was build by Paul Cheney  -->
+    <title>Wright Weather: Weather for travel</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <!-- HEADER HERE -->
+    <div class="headerWrapper">
+        <header class="clearfix">
+            <section class="pictures">
+                <img src="images/sunnyairplane.png" alt="logo">
+            </section>
+            <section class="headings">
+                <h1>Wright Weather</h1>
+                <h2>Weather for your destination</h2>
+            </section>
+        </header>
+    </div>
+
+    <!-- NAVIGATION HERE -->
+    <div class="navWrapper">
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="soda_springs.html">Soda Springs</a></li>
+                <li><a href="fish_haven.html">Fish Haven</a></li>
+                <li><a href="storm_center.html">Storm Center</a></li>
+                <li class="active"><a href="gallery.html">Gallery</a></li>
+            </ul>
+            <script src="js/script.js">
+            </script>
+        </nav>
+    </div>
+
+
+    <!-- CONTENT HERE -->
+
+    <main>
+        <section class="grid">
+            <div><img src="images/placeholder.jpg" data-src="images/bus.jpg" alt="bus">
+                <p>Bus in snow</p></div>
+            <div><img src="images/placeholder.jpg" data-src="images/lighteningtree.jpg" alt="lightningtree">
+            <p>Lightning on a tree</p></div>
+            <div><img src="images/placeholder.jpg" data-src="images/preston.jpg" alt="lightningtrail">
+            <p>Trail leading to lightning</p></div>
+            <div><img src="images/placeholder.jpg" data-src="images/peekingthrough.jpg" alt="peekingthrough">
+            <p>Mountains peeking through</p></div>
+            <div><img src="images/placeholder.jpg" data-src="images/sky.jpg" alt="sky">
+            <p>Beautiful sunset</p></div>
+            <div><img src="images/placeholder.jpg" data-src="images/tree.jpg" alt="tree">
+            <p>Misty morning</p></div>
+            <div><img src="images/placeholder.jpg" data-src="images/typhoon.jpg" alt="typhoon">
+            <p>Typhoon from above</p></div>
+            <div><img src="images/placeholder.jpg" data-src="images/woods.jpg" alt="woods">
+            <p>Into the woods</p></div>
+            <div><img src="images/placeholder.jpg" data-src="images/sodasprings.jpg" alt="mountaintops">
+            <p>High on the mountain top</p></div>
+
+
+
+        </section>
+        <script src="js/imagehandling.js"></script>
+    </main>
+
+    <!-- FOOTER HERE -->
+    <div class="footerWrapper">
+        <footer>
+            &copy; 2020 &bull; Christopher Peck
+
+        </footer>
+
+    </div>
+    <script>
+        const today = new Date();
+        console.log(today);
+
+        const dayNumber = today.getDay();
+        console.log(dayNumber);
+
+        const element = document.getElementById("message");
+
+        if (dayNumber == 6) {
+            element.classList.add("showme");
+        } else {
+            element.classList.add("hideme");
+        }
+    </script>
+    <script src="js/script1.js"></script>
+</body>
+
+</html>

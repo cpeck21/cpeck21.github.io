@@ -1,0 +1,43 @@
+/* 64em is also 1028px (if basefont is 16px) */
+@media only screen and (min-width: 70rem) {
+
+    header, nav, main, footer {
+        max-width: 1024px;
+        margin:0 auto;
+    }
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+
+
+
+
+/*----------- MAIN --------------*/
+.herodiv{
+    width: 100%;
+}
+
+div#forecast {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid div {
+    padding: 0;
+    border-radius: 10px;
+}
+
+.grid div img:hover {
+    box-shadow: 0 0 50px #333
+}
+
+
+/*----------- FOOTER --------------*/
+    
+} /* end of media query */

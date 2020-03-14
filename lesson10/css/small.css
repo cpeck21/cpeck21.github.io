@@ -178,8 +178,9 @@ div#forecast div h3 {
 div#forecast div {
     text-align: center;
     border: 1px solid #aaa;
-    background-color: grey;
     border-radius: 10px;
+    padding: 0px;
+    margin: 0px;
 }
 
 div#forecast img {

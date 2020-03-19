@@ -1,0 +1,133 @@
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.cards section {
+    background-image: linear-gradient(135deg,  rgb(9, 2, 109), rgba(0,0,225,.3));
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.cards section img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.cards section h3 {
+    font-size: 17px;
+}
+
+.cards section h2 {
+    color: white;
+    padding-bottom: 10px;
+}
+
+.cards section p, .cards section h3 {
+    color: white;
+}
+
+.cards section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.homepagemap p {
+    color:white;
+}
+
+.lowerhomepage {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.lowerhomepage div {
+    background-image: linear-gradient(rgba(0,0,225,.3),  rgb(9, 2, 109));
+    border-radius: 10px;
+}
+
+.homepagemap a {
+    color: white;
+    padding-top: 10px;
+    margin: auto;
+}
+
+.homepagelinktoarticle h2 {
+    color: white;
+    padding-top: 5px;
+}
+
+article img {
+    max-width: 200px;
+}
+
+.homepagelinktoarticle p {
+    color: white;
+    text-decoration: none;
+}
+
+div.lowerhomepage a {
+    color: white;
+}
+
+div.homepagelinktoarticle img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media only screen and (min-width: 540px) {
+    .cards { 
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    section {
+      display: flex;
+        flex-direction: column;
+        width: 300px;
+
+    }
+
+    section img {
+        margin-left: 50px;
+    }
+    
+    section:nth-child(odd) {
+        flex-direction: column-reverse;
+    }
+
+    section.pictures {
+        margin: 0px;
+    }
+
+    .lowerhomepage {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    div.homepagelinktoarticle img {
+        max-width: 300px;
+    }
+
+    
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+    .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    section {
+        display: grid;
+    }
+
+
+}

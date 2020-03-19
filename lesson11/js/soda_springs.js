@@ -4,7 +4,7 @@ const apiURL1 = "//api.openweathermap.org/data/2.5/weather?id=5607916&units=impe
 fetch(apiURL1)
     .then((response) => response.json())
     .then((data) => {
-        console.log(data);
+       
         document.getElementById('temp').textContent = "Current temp: " + data.main.temp + "\xB0";
         document.getElementById('humid').textContent = "Humidity: " + data.main.humidity + "%";
         document.getElementById('speed').textContent = "Wind Speed: " + data.wind.speed + "mph";
@@ -40,7 +40,7 @@ const apiURL = "//api.openweathermap.org/data/2.5/forecast?id=5604473&units=impe
     .then((jsObject) => {
         
     let mylist = jsObject.list.filter(x => x.dt_txt.includes('18:00:00'));
-    console.log(mylist);
+   
 
         let forecastDayNumber = todayDayNumber;
         for (i=0; i<mylist.length; i++) {

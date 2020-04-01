@@ -1,4 +1,4 @@
-/*fetch("//api.openweathermap.org/data/2.5/weather?id=5596467&units=imperial&APPID=78605b9cef040f5f304838f9fb2cc00e")
+fetch("//api.openweathermap.org/data/2.5/weather?id=5596467&units=imperial&APPID=78605b9cef040f5f304838f9fb2cc00e")
     .then((response) => response.json())
     .then((data) => {
 
@@ -23,4 +23,4 @@
             
 
     });
-    */
+    

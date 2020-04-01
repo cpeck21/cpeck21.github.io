@@ -1,0 +1,31 @@
+{
+    "riverguides": [
+      {
+        "name": "Daniel Stone",
+        "photo": "danielstone.jpg",
+        "level": "Mild",
+        "yearsOfExp": 2,
+        "email": "stone.dan@riverguiding.com",
+        "biography": "Daniel loves the outdoors! He is a lover of water and wants to gain more and more experience. If you are new to this, Daniel is the man for you!"
+     
+    },
+      {
+        "name": "Amanda Head",
+        "photo": "amandahead.jpg",
+        "level": "Medium",
+        "yearsOfExp": 5,
+        "email": "head.jeff@riverguiding.com" ,
+        "biography": "Jeff is always looking for an adventure. He has some experience on the water and will always be looking for that rapid you will tell your children about!"
+        
+      },
+      {
+        "name": "Justin King",
+        "photo": "justinking.jpg",
+        "level": "Wild",
+        "yearsOfExp": 12,
+        "email": "king.justin@riverguiding.com",
+        "biography": "There is no better man for you than the King. Justin has been doing this for longer than some of you children have been alive. Let him take you on a wild ride."
+    
+      }
+    ]
+}

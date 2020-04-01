@@ -1,0 +1,368 @@
+header {
+    padding: .5rem 2%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    float: left;
+    margin-right: 10px;
+    width: 75px;
+    vertical-align: bottom;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: forestgreen;
+    font-size: 40px;
+    text-align: left;
+}
+
+header h2 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 1rem;
+    color: forestgreen;
+}
+
+nav {
+    background-color: forestgreen;
+    width: 100%;
+    border-radius: 10px;
+    position: static;
+    padding: 0;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.hero-ph img {
+    margin-left: 2%;
+    width: 423px;
+    top: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding-bottom: 50px;
+}
+
+nav li.active {
+    background-color: rgb(0, 82, 0);
+}
+
+nav li:hover {
+    background-color: rgb(35, 207, 0);
+}
+
+.message {
+    background-image: linear-gradient(-45deg, green, white);
+    border-radius: 10px;
+    width: 55%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.button {
+
+    text-align: center;
+}
+
+button {
+    height: 44px;
+    background-image: linear-gradient(-45deg, forestgreen, white);
+    color: black;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 2%;
+}
+
+.images img,
+.homecontact {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding-bottom: 15px;
+
+}
+
+
+
+.weathersummary {
+    background-color: rgba(34, 139, 34, .5);
+    border-radius: 10px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.hptitle {
+    text-align: center;
+
+}
+
+.footerWrapper {
+    background-color: forestgreen;
+}
+
+footer {
+    text-align: center;
+}
+
+
+
+.cards img {
+    max-width: 200px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.cards section {
+    background-color: rgba(34, 139, 34, .5);
+    max-width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.pictureone {
+    max-width: 280px;
+    float: left;
+}
+
+.adventuresmainone {
+    background-color: rgba(34, 139, 34, .5);
+    padding: 10px 10px 30px 10px;
+    border-radius: 10px;
+}
+
+.list {
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+
+* {
+    padding: .35rem;
+}
+
+h2 {
+    text-align: center;
+}
+
+.altpic {
+    max-width: 600px;
+    margin: .5rem auto;
+    border: 1px solid #bbb;
+    background-color: forestgreen;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+}
+
+article:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+ .otherpic {
+    
+    width: 100%;
+    height: auto;
+    max-width: 120px;
+}
+
+.data {
+    background-color: #000;
+    color: #fff;
+}
+
+form fieldset {
+    margin-left: 2%;
+   
+
+}
+
+form label {
+    display: block;
+    padding-top: 1rem;
+
+}
+
+form input {
+    display: block;
+    padding-top: 10px;
+}
+
+
+
+form textarea {
+    display: block;
+    padding-top: 20px;
+}
+
+form {
+    width: 100%; 
+}
+
+.map {
+    width: 200px;
+    height: 200px;
+    margin-left: 20px;
+}
+
+.contactinfo {
+    text-align: left;
+}
+
+@media only screen and (min-width: 620px) {
+
+    nav {
+        position: absolute;
+        width: 200px;
+        margin: 2%;
+    }
+
+    .hero-ph {
+        position: relative;
+        left: 200px;
+        margin-left: 2%;
+        width: 75%
+    }
+
+    .altpic {
+        margin-left: 220px;
+    }
+
+    .otherpic {
+        max-width: 180px;
+    }
+
+    .cards section {
+        margin-left: 250px;
+    }
+    
+
+    .images {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    form {
+        margin-left: 210px;
+        width: 330px;
+    }
+
+    .map {
+        margin-left: 231px;
+    }
+   
+    table {
+        margin-left: 210px;
+    }
+
+    @media only screen and (min-width: 900px) {
+        .cards section {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        form {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .map {
+           display: block;
+           margin-left: auto;
+           margin-right: auto;
+
+        }
+
+        table {
+           margin-left: auto;
+           margin-right: auto;
+        }
+       
+    }
+
+  
+    @media only screen and (min-width: 1120px) {
+        .cards section {
+            max-width: 600px;
+        }
+
+        .altpic {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .otherpic {     
+            max-width:300px;
+        }
+    }
+
+
+
+
+    @media only screen and (min-width: 1200px) {
+
+        .images {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}

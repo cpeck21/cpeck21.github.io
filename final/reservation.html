@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="River Rafting">
+    <meta name="author" content="Christopher Peck">
+    <title>Raft that River</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+    <!-- HEADER -->
+   
+        <header class="clearfix">
+            <section class="headpicture">
+                <img src="images/iconlogo.png" alt="logo">
+            </section>
+            <section class="headings">
+                <h1>Raft that River</h1>
+                <h2>Not here for a long time, just here for a good time</h2>
+            </section>
+        </header>
+  
+
+    <!-- NAVIGATION HERE -->
+    
+                <nav class="clearfix">
+            <ul id="primaryNav" class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="adventures.html">Adventures</a></li>
+                <li><a href="riverguide.html">River Guides</a></li>
+                <li class="active"><a href="reservation.html">Reservations</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+
+
+    <!-- CONTENT HERE -->
+
+    <main>
+
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Send Message</legend>
+                <label> Full name*: <input type="text" name="name" placeholder="Name" class="first" required></label>
+                <br>
+                <label > Email*: <input type="email" name="email" class="first" placeholder="someone@gmail.com"
+                        required></label>
+                        <br>
+                <label > Phone*: <input type="tel" name="phone" class="first" placeholder="1235551234"></label>
+                <br>
+                
+                <fieldset>
+                    <legend>Adventure Choice (see below)</legend>
+                <label><input class="second" type="radio" name="choice" value="one">Adventure One</label>
+                <label><input class="second" type="radio" name="choice" value="two">Adventure Two</label>
+                <label><input class="second" type="radio" name="choice" value="three">Adventure Three</label>
+                </fieldset>
+                <br>
+                <label>Start date: <input type="date" name="startdate"></label>
+                <br>
+                <label> Message*: <textarea name="message" class="first" placeholder="Message" required></textarea></label>
+                <br>
+                <button name="send" type="submit" class="submit">Send</button>
+                
+                
+            </fieldset>
+
+        </form>
+
+        <table>
+            <tr>
+              <th>Adventure</th>
+              <th>Skill level</th>
+              <th>Price</th>
+              <th>Length</th>
+            </tr>
+            <tr>
+              <td>One</td>
+              <td>Mild</td>
+              <td>$100</td>
+              <td>3 days</td>
+            </tr>
+            <tr>
+              <td>Two</td>
+              <td>Medium</td>
+              <td>$200</td>
+              <td>5 days</td>
+            </tr>
+            <tr>
+              <td>Three</td>
+              <td>Wild</td>
+              <td>$350</td>
+              <td>7 days</td>
+            </tr>
+         
+          </table>
+    </main>
+
+    <!-- FOOTER HERE -->
+    <div class="footerWrapper">
+        <footer>
+            &copy; 2020 &bull; Christopher Peck
+
+        </footer>
+
+    </div>
+    
+</body>
+
+</html>

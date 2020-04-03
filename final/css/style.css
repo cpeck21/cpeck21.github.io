@@ -94,6 +94,10 @@ button {
     color: black;
 }
 
+.ulbutton{
+    width: 44px;
+}
+
 .images {
     display: grid;
     grid-template-columns: 1fr;
@@ -271,6 +275,7 @@ form {
 
     .ulbutton {
         display: none;
+        
     }
 
     .primarynav{

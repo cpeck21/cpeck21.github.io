@@ -47,29 +47,29 @@
         <form method="get" action="thanks.html">
             <fieldset>
                 <legend>Send Message</legend>
-                <label> Full name*: <input type="text" name="name" placeholder="Name" class="first" required></label>
+                <label class="otherlabels"> Full name*: <input type="text" name="name" placeholder="Name" class="first" required></label>
                 <br>
-                <label > Email*: <input type="email" name="email" class="first" placeholder="someone@gmail.com"
+                <label class="otherlabels" > Email*: <input type="email" name="email" class="first" placeholder="someone@gmail.com"
                         required></label>
                         <br>
-                <label > Phone*: <input type="tel" name="phone" class="first" placeholder="1235551234"></label>
+                <label class="otherlabels" > Phone*: <input type="tel" name="phone" class="first" placeholder="1235551234"></label>
                 <br>
                 
-                <fieldset>
-                    <legend>Adventure Choice (see below)</legend>
-                <label><input class="second" type="radio" name="choice" value="one">Adventure One</label>
-                <label><input class="second" type="radio" name="choice" value="two">Adventure Two</label>
-                <label><input class="second" type="radio" name="choice" value="three">Adventure Three</label>
+                
+                <label class="choicetitle">Adventure Choice (see below):</label>
+                <label class="choice"><input class="second" type="radio" name="choice" value="one">Adventure One</label>
+                <label class="choice"><input class="second" type="radio" name="choice" value="two">Adventure Two</label>
+                <label class="choice"><input class="second" type="radio" name="choice" value="three">Adventure Three</label>
+                
+                <br>
+                <label class="otherlabels">Start date: <input type="date" name="startdate" class="first"></label>
+                <br>
+                <label class="otherlabels"> Message*: <textarea name="message" class="first" placeholder="Message" required></textarea></label>
+                <br>
+                <button name="send" type="submit" class="submit">Send my Message</button>
                 </fieldset>
-                <br>
-                <label>Start date: <input type="date" name="startdate"></label>
-                <br>
-                <label> Message*: <textarea name="message" class="first" placeholder="Message" required></textarea></label>
-                <br>
-                <button name="send" type="submit" class="submit">Send</button>
                 
-                
-            </fieldset>
+            
 
         </form>
 

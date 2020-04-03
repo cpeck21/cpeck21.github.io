@@ -226,21 +226,25 @@ form label {
 
 }
 
-form input {
-    display: block;
-    padding-top: 10px;
+input.first, form textarea {
+    height:44px;
+}
+
+label.choice {
+    padding: 20px;
+}
+
+.choicetitle {
+    padding: 5px;
 }
 
 
 
-form textarea {
-    display: block;
-    padding-top: 20px;
-}
 
 form {
     width: 100%; 
 }
+
 
 .map {
     width: 200px;

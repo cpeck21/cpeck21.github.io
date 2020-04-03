@@ -105,10 +105,20 @@ button {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
     padding-bottom: 15px;
+    width: 90%;
 
 }
+
+nav ul.hide {
+    display: none;
+}
+
+.ulbutton {
+    margin-left: 5%;
+}
+
+
 
 
 
@@ -202,8 +212,8 @@ article:nth-child(odd) {
     flex-direction: row-reverse;
 }
 
- .otherpic {
-    
+.otherpic {
+
     width: 100%;
     height: auto;
     max-width: 120px;
@@ -216,7 +226,7 @@ article:nth-child(odd) {
 
 form fieldset {
     margin-left: 2%;
-   
+
 
 }
 
@@ -226,8 +236,9 @@ form label {
 
 }
 
-input.first, form textarea {
-    height:44px;
+input.first,
+form textarea {
+    height: 44px;
 }
 
 label.choice {
@@ -242,7 +253,7 @@ label.choice {
 
 
 form {
-    width: 100%; 
+    width: 100%;
 }
 
 
@@ -257,6 +268,16 @@ form {
 }
 
 @media only screen and (min-width: 620px) {
+
+    .ulbutton {
+        display: none;
+    }
+
+    .primarynav{
+        display: block;
+    }
+
+
 
     nav {
         position: absolute;
@@ -282,11 +303,6 @@ form {
     .cards section {
         margin-left: 250px;
     }
-    
-
-    .images {
-        grid-template-columns: 1fr 1fr;
-    }
 
     form {
         margin-left: 210px;
@@ -296,9 +312,16 @@ form {
     .map {
         margin-left: 231px;
     }
-   
+
     table {
         margin-left: 210px;
+    }
+
+
+    @media only screen and (min-width: 800px) {
+        .images {
+            grid-template-columns: 1fr 1fr;
+        }
     }
 
     @media only screen and (min-width: 900px) {
@@ -315,20 +338,20 @@ form {
         }
 
         .map {
-           display: block;
-           margin-left: auto;
-           margin-right: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
 
         }
 
         table {
-           margin-left: auto;
-           margin-right: auto;
+            margin-left: auto;
+            margin-right: auto;
         }
-       
+
     }
 
-  
+
     @media only screen and (min-width: 1120px) {
         .cards section {
             max-width: 600px;
@@ -340,8 +363,8 @@ form {
             margin-right: auto;
         }
 
-        .otherpic {     
-            max-width:300px;
+        .otherpic {
+            max-width: 300px;
         }
     }
 

@@ -243,6 +243,7 @@ form label {
 input.first,
 form textarea {
     height: 44px;
+    display: block;
 }
 
 label.choice {
@@ -271,6 +272,17 @@ form {
     text-align: left;
 }
 
+.contactusinput {
+    height: 44px;
+    display: block;
+}
+
+.pagetitle {
+    text-align: center;
+    font-size: 44px;
+    color: forestgreen;
+}
+
 @media only screen and (min-width: 620px) {
 
     .ulbutton {
@@ -278,7 +290,7 @@ form {
         
     }
 
-    .primarynav{
+    #primaryNav{
         display: block;
     }
 
@@ -300,6 +312,10 @@ form {
     .altpic {
         margin-left: 220px;
     }
+
+.pagetitle {
+    margin-left: 85px;
+}
 
     .otherpic {
         max-width: 180px;
@@ -327,6 +343,18 @@ form {
         .images {
             grid-template-columns: 1fr 1fr;
         }
+
+        .primarynav{
+            display: block;
+        }
+
+        .pagetitle {
+            text-align: center;
+        }
+
+        .pagetitle {
+            margin-left: -20px;
+        }
     }
 
     @media only screen and (min-width: 900px) {
@@ -335,6 +363,10 @@ form {
             margin-left: auto;
             margin-right: auto;
 
+        }
+
+        .primarynav{
+            display: block;
         }
 
         form {
@@ -362,6 +394,10 @@ form {
             max-width: 600px;
         }
 
+        .primarynav{
+            display: block;
+        }
+
         .altpic {
             display: block;
             margin-left: auto;
@@ -371,6 +407,8 @@ form {
         .otherpic {
             max-width: 300px;
         }
+
+        
     }
 
 
